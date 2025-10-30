@@ -1,0 +1,17 @@
+[project]
+name = "crop1080"
+version = "0.1.0"
+description = "Crop left/right margins by 34px and resize to 1080px width."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["Pillow>=10.0.0"]
+
+[project.scripts]
+crop1080 = "crop1080.cli:main"
+
+[build-system]
+requires = ["setuptools>=67", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
